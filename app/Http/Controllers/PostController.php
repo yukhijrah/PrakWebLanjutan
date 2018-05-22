@@ -52,10 +52,10 @@ class PostController extends Controller
         ]);
 
         $post = new Post();
-        $post->title = $request->title;
-        $post->content = $request->content;
-        $post->image = 'Image';
-        $post->author = $request->user()->name;
+        $post-> title = $request->title;
+        $post-> content = $request->content;
+        $post-> image = 'Image';
+        $post-> author = $request->user()->name;
         $post->save();
 
         if($post->save()) {
